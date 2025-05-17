@@ -1,4 +1,5 @@
 
+let inGameBreeds;
 
 document.addEventListener("DOMContentLoaded", function(){
   console.log('gameBoard is', gameBoard)
@@ -13,16 +14,32 @@ document.addEventListener("DOMContentLoaded", function(){
         return `<section class="gridSection"><img class="gridImage" src="${pup}" alt="Cute dog photo"></section>`;
       })
       gameBoard.innerHTML = imageElements.join('');
+      inGameBreeds = document.querySelectorAll('.gridImage');
+      console.log("pups included in game are:", inGameBreeds)
+
+      // For each inGameBreed, adds an event listener that listens for a click event.
+      inGameBreeds.forEach( inGameBreed => {
+        inGameBreed.addEventListener('click', () => {
+          const whichBreed = inGameBreed.src
+          console.log(whichBreed);
+        });
+      });
+
+
+
     })
     .catch(e => {
       console.log(e);
     })
 
     //another fetch for to populate reference array  of dog breeds
-    
+
 })
 
 
 
 //functionality: game interactions click event listener open a modal with larger dog image and 4 breed  multiple choice
+
+
+
 // async/ await for win condition  announce win, invite to play again or link to adoption options
