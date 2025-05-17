@@ -12,6 +12,8 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@petfinder/petfinder-js": "^1.0.6"
+    "@petfinder/petfinder-js": "^1.0.6",
+    "@tailwindcss/vite": "^4.1.7",
+    "tailwindcss": "^4.1.7"
   }
 }
