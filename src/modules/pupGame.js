@@ -1,4 +1,4 @@
-
- const pupGame =  (pupURL) {
-      // Open the dialog
-      dialog.showModal();
+//  const pupGame =  (pupURL){
+//       // Open the dialog
+//       dialog.showModal();
+//      }

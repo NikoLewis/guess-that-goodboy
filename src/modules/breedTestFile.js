@@ -1,8 +1,7 @@
 
-
 // console.log(Object.values(data));
 
-let dogsBreedsList = [ 
+let dogBreedList = [ 
   'affenpinscher', 'african',     'airedale',        'akita',
   'appenzeller',   'australian kelpie', 'australian shepherd', 'indian bakharwal',       'basenji',
   'beagle',        'bluetick',    'borzoi',          'bouvier',
@@ -14,7 +13,7 @@ let dogsBreedsList = [
   'swedish danish',        'scottish deerhound',   'dhole',           'dingo',
   'doberman',      'norwegian elkhound',    'entlebucher',     'eskimo',
   'finnish lapphund',       'bichon frise',       'indian gaddi',           'german shepherd',
-  'indian greyhound', 'italian greyhound'    'groenendael', 'havanese',        'afghan hound',
+  'indian greyhound', 'italian greyhound',    'groenendael', 'havanese',        'afghan hound',
   "basset hound", "blood hound", "english hound","ibizan hound", "plott hound",
   "walker hound", "english mastiff", "indian mastiff","tibetan mastiff",
   'husky',         'keeshond',    'kelpie',          'kombai',
@@ -23,14 +22,14 @@ let dogsBreedsList = [
   'maltese',       'bull mastiff',  'swiss mountain dog',   'mexicanhairless', 'mix',
   'bernese mountain dog',      'indian mudhol',      'newfoundland',    'otterhound',
   'caucasian ovcharka',      'papillon',    'indian pariah',          'pekinese',
-  'pembroke',      'miniature pinscher',    'pitbull',         'german pointer', 'german longhaired pointer'
+  'pembroke',      'miniature pinscher',    'pitbull',         'german pointer', 'german longhaired pointer',
   'pomeranian',    'medium poodle',   "miniature poodle", "standard poodle",
 "toy poodle", 'pug',             'puggle',
   'pyrenees',      'indian rajapalayam', 'redbone',         'chesapeake retriever',
-  "curly retriever", "flatcoated retriever", "golden retriever"
+  "curly retriever", "flatcoated retriever", "golden retriever",
   'rhodesian ridgeback',     'rottweiler',  'saluki',          'samoyed',
   'schipperke',    'giant schnauzer', 'miniature schnauzer',  'italian segugio',         'english setter',
-  "gordon setter", "irish setter", 'english sheepdog', 'indian sheepdog'
+  "gordon setter", "irish setter", 'english sheepdog', 'indian sheepdog',
   'sharpei',       'shetland sheepdog',    'shiba',           'shihtzu',
   "blenheim spaniel", "brittany spaniel", "cocker spaniel","irish spaniel",
   "japanese spaniel", "sussex spaniel", "japanese spaniel", 'japanese spitz',
@@ -41,7 +40,7 @@ let dogsBreedsList = [
   "russell terrier", "scottish terrier","sealyham terrier", "silky terrier",
   "tibetan terrier", "toy terrier", "welsh terrier", "westhighland terrier",
   "wheaten terrier","yorkshire terrier", "tervuren","vizsla","spanish water dog",
-  "weimaraner", "whippet", "irish wolfhound"      
+  "weimaraner", "whippet", "irish wolfhound"  
 ]
 
-  
+  export default dogBreedList;

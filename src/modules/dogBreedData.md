@@ -1,10 +1,9 @@
 dogBreedsList = ["affenpinscher","african", "airedale", "akita","appenzeller",
-        "australian": [
-            "kelpie",
-            "shepherd"
-        ],
+"australian": [
+"kelpie",
+"shepherd"
+],
 
-        
         "bakharwal": [
             "indian"
         ],
@@ -236,4 +235,5 @@ dogBreedsList = ["affenpinscher","african", "airedale", "akita","appenzeller",
         "wolfhound": [
             "irish"
         ]
+
 ]

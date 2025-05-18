@@ -1,12 +1,19 @@
 
-#app{
+
+
+#app {
   display: flex;
   flex-direction: column;
 }
 #gameBoard {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content:center;
+  justify-content: center;
+}
+#chosenPupDialog{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .gridSection {
@@ -17,24 +24,36 @@
 }
 
 .gridImage {
-     /* border: 10px solid black;  */
-    width: 9em;
-    height: 9em;
-    object-fit: fill;
-    /* display: block; */
-  } 
+  /* border: 10px solid black;  */
+  width: 9em;
+  height: 9em;
+  object-fit: fill;
+  /* display: block; */
+
+}
 
 /* .puppies{
 /* }  */
 
-h1{
+h1 {
   font-size: 3em;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-around;
   font-size: 1em;
   align-items: center;
 }
 
+
+.buttons{
+  display: flex;
+  /* width: 200px; */
+}
+.btn{
+  width: 128px;
+  height: 4em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
