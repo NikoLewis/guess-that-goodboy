@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", function(){
         inGameBreed.addEventListener('click', () => {
           const whichBreed = inGameBreed.src
           console.log(whichBreed);
+
+          const dialog = document.getElementById("chosenPupDialog");
+          console.log(whichBreed.indexOf("breeds/"))// always at 23
+          let start = whichBreed.indexOf("breeds/")
+          let thisBreed = whichBreed.substring(30, whichBreed.length + 1)
+          console.log('this breed is:',thisBreed)
+          let cutOff = thisBreed.indexOf('/')
+          // let index = input.LastIndexOf("/");
+          
+             let dogName = thisBreed.substring(0,cutOff ).replace("-", " "); // or index + 1 to keep slash
+          
+             //replace this console.log with a show modal function call
+            console.log('dog name clicked is', dogName)
+
+          // dialog.innerHTML = 
         });
       });
 
