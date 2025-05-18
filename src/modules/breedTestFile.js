@@ -2,7 +2,7 @@
 
 // console.log(Object.values(data));
 
-export default let dogBreedsList = [
+let dogsBreedsList = [ 
   'affenpinscher', 'african',     'airedale',        'akita',
   'appenzeller',   'australian kelpie', 'australian shepherd', 'indian bakharwal',       'basenji',
   'beagle',        'bluetick',    'borzoi',          'bouvier',
