@@ -57,3 +57,11 @@ ul {
   font-size: 1.2em;
   font-weight: bold;
 }
+.pass{
+color: green;
+/* box-shadow: 10px 20px rgb(94, 200, 97); */
+}
+.fail{
+color: red;
+/* box-shadow: 10px 20px rgb(115, 6, 6); */
+}

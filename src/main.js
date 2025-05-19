@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let pupData = data.message;
       const imageElements = pupData.map((pup) => {
         let gameBoard = document.getElementById('gameBoard');
-        return `<section class="gridSection"><img class="gridImage" src="${pup}" alt="Cute dog photo"></section>`;
+        return `<section class="gridSection"><img class="gridImage" id="${pup}" src="${pup}" alt="Cute dog photo"></section>`;
       });
       gameBoard.innerHTML = imageElements.join('');
       inGameBreeds = document.querySelectorAll('.gridImage');
@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
            for (let i = 0; i < buttons.length; i++) {
             // console.log('we are within the new for loop')
+            let ourButtons = buttons[i]
+            ourButtons.disabled = false;
             if(buttons[i].getAttribute('data-dogName') == dogName){
                 console.log(`${buttons[i].getAttribute('id')} is the correct answer`)
                 buttons[i].setAttribute('data-CorrectAnswer', "true")

@@ -39,7 +39,8 @@ A card layout dog-instagram
 - modal with show selected dog image and 4 button choices with dog breeds
 - when 1 of 4 buttons is selected:
   -disable all buttons (they will need to be reset to on above) using a class and css
-  - some graphic to show correct or incorrect and close modal
+  - some graphic to show correct or incorrect 
+  - close modal*
   - then leave the gameboard image marked approriately
   - tracked towards win-case
   - border shadowed in red or green and disabled

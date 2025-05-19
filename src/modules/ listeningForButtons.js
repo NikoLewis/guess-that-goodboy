@@ -11,17 +11,27 @@ function listeningForButtons (array){
         console.log('a button was clicked', thisButton.innerText, 'is it the right answer?', usingDataAttrb )
         thisButton.setAttribute("data-choiceSelected", "true")
          let compareAttributes = thisButton.getAttribute('data-choiceSelected')
-         let titleArea = document.getElementById("title")
+         let titleArea = document.getElementById("title");
+        //  let selectedImage = document.getElementById(`${thisButton.src}`)
+        //  console.log('am I grabbing the image?', selectedImage)
         if(compareAttributes === 'true' && usingDataAttrb === 'true'){
-            thisButton.className = 'pass'
+            titleArea.className = 'pass'
             console.log('Correct! Great Job.')
             titleArea.innerHTML = 'Correct! Great Job.'
-        
+           
+            document.getElementById('1').disabled = true
+            document.getElementById('2').disabled = true
+             document.getElementById('3').disabled = true
+             document.getElementById('4').disabled = true
 
         }else{
             console.log('Incorrect! Better luck next time.')
             titleArea.innerHTML = 'Incorrect! Better luck next time.'
-            thisButton.className = 'fail'
+            titleArea.className = 'fail'
+             document.getElementById('1').disabled = true
+            document.getElementById('2').disabled = true
+             document.getElementById('3').disabled = true
+             document.getElementById('4').disabled = true
         }
         })
         
