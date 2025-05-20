@@ -37,5 +37,5 @@ const rawJSON = {
 };
 
 const samplePupData = rawJSON.message;
-console.log(samplePupData);
+// console.log(samplePupData);
 export default samplePupData;

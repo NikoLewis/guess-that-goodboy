@@ -22,7 +22,7 @@ let dogBreedList = [
   'maltese',       'bull mastiff',  'swiss mountain dog',   'mexicanhairless', 'mix',
   'bernese mountain dog',      'indian mudhol',      'newfoundland',    'otterhound',
   'caucasian ovcharka',      'papillon',    'indian pariah',          'pekinese',
-  'pembroke',      'miniature pinscher',    'pitbull',         'german pointer', 'german longhaired pointer',
+  'pembroke corgi',      'miniature pinscher',    'pitbull',         'german pointer', 'german longhaired pointer',
   'pomeranian',    'medium poodle',   "miniature poodle", "standard poodle",
 "toy poodle", 'pug',             'puggle',
   'pyrenees',      'indian rajapalayam', 'redbone',         'chesapeake retriever',

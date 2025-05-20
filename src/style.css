@@ -10,11 +10,9 @@
   grid-template-columns: auto auto auto;
   justify-content: center;
 }
-#chosenPupDialog{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
+
+dialog:not([open]) { display: none !important; }
 
 .gridSection {
   display: grid;
@@ -31,7 +29,16 @@
   /* display: block; */
 
 }
-
+#buttonContainer{
+  height: 420px;
+  height: 420px;
+}
+#closeButton{
+  width: 128px;
+  height: 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
 /* .puppies{
 /* }  */
 
@@ -46,22 +53,49 @@ ul {
   align-items: center;
 }
 
+img{
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+#imgContainer{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  /* height: 250px; */
+  /* width: 200px; */
+  
+}
 
 .buttons{
   display: flex;
-  /* width: 200px; */
+  justify-content: space-between;
+  /* height: 140px; */
+  width: 600px;
 }
 .btn{
   width: 128px;
-  height: 4em;
-  font-size: 1.2em;
+  height: 2.5em;
+  font-size: 1em;
   font-weight: bold;
 }
 .pass{
 color: green;
-/* box-shadow: 10px 20px rgb(94, 200, 97); */
+
 }
 .fail{
 color: red;
-/* box-shadow: 10px 20px rgb(115, 6, 6); */
+
+}
+
+.wrong{
+box-shadow: 10px 20px rgb(115, 6, 6);
+}
+.right{
+box-shadow: 10px 20px rgb(94, 200, 97);
+}
+#titleArea{
+  display: flex;
+  justify-content: space-around;
 }
