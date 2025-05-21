@@ -40,7 +40,7 @@ const buildGameBoard = ()=>{
               console.log('dog name clicked is', dogName);
               
               let multipleChoiceOptions = [dogName]
-
+              
             inGameBreed.addEventListener('click', () => {
                 
                 console.log('ingameBreed =', inGameBreed);
@@ -59,7 +59,31 @@ const buildGameBoard = ()=>{
               // let dialog = document.getElementById("chosenPupDialog");
             //  let dialog = document.getElementById('chosenPupDialog');
     
-          let buttons = document.getElementsByClassName('btn')
+     let insideDialog = document.getElementById('dialogContainer')
+     
+     
+              insideDialog.innerHTML = 
+              `<div id="buttonContainer">
+              <div id="titleArea">
+                <h2 id="title">Guess that Pup!</h2> 
+              </div>
+              <div id="imgContainer">
+                <img src="${whichBreed}" alt="Cute dog picture" />
+              </div>
+                <div class="buttons">
+                <button type="button" id="1" class="btn" data-correctAnswer="false" data-dogName="${multipleChoiceOptions[0]}"  data-choiceSelected="" >${multipleChoiceOptions[0]}</button>
+                <button type="button" id="2" class="btn" data-correctAnswer="false" data-dogName="${multipleChoiceOptions[1]}" data-choiceSelected="">${multipleChoiceOptions[1]}</button>
+                <button type="button" id="3" class="btn" data-correctAnswer="false" " data-dogName="${multipleChoiceOptions[2]}" data-choiceSelected="">${multipleChoiceOptions[2]}</button>
+                <button type="button" id="4" class="btn" data-correctAnswer="false" data-dogName="${multipleChoiceOptions[3]}" data-choiceSelected="">${multipleChoiceOptions[3]}</button>
+                </div>
+              </div>
+                `;
+    
+    
+              dialog.showModal();
+               let buttons = document.getElementsByClassName('btn');
+              
+    
     
                for (let i = 0; i < buttons.length; i++) {
                 // console.log('we are within the new for loop')

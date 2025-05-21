@@ -32,11 +32,11 @@ function listeningForButtons (array){
         //     thisButton.setAttribute('data-correctAnswer', 'true') 
         //     console.log('is correct answer marked true?', thisButton)
         // }
-            // console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
-        //  let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
+            console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
+         let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
 
-        //     thisButton.setAttribute("data-choiceSelected", "true")
-        //     let compareAttributes = thisButton.getAttribute('data-choiceSelected')
+            thisButton.setAttribute("data-choiceSelected", "true")
+            let compareAttributes = thisButton.getAttribute('data-choiceSelected')
             let title = document.getElementById("title");     
             // let titleArea = document.getElementById('titleArea')
         //   && usingDataAttrb === 'true'
