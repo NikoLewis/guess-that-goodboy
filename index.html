@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess that Pup</title>
   </head>
@@ -10,11 +13,12 @@
     <div id="app">
       <ul>
         <li><h1>Guess that Goodboy</h1></li>
-        <li>
-        <button id="playButton">create a new set of pups to guess</button>
-        </li>
+        <li><span>Click on a pup then sniff out their breed</span></li>
+        
       </ul>
-       <span>Click on a pup then sniff out their breed</span>
+      
+        <button id="playButton">create a new set of pups to guess</button>
+        
       <!-- attempting a grid for the gameboard -->
       <section id="gameBoard"></section>
       <dialog id="chosenPupDialog">

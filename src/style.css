@@ -41,17 +41,13 @@ dialog:not([open]) { display: none !important; }
   height: 420px;
   height: 420px;
 }
-#closeButton{
-  width: 128px;
-  height: 2.5em;
-  font-size: 1em;
-  font-weight: bold;
-}
+
 /* .puppies{
 /* }  */
 
 h1 {
   font-size: 3em;
+  font-family: "Playfair+Display:ital",
 }
 
 ul {
@@ -59,13 +55,27 @@ ul {
   justify-content: space-around;
   font-size: 1em;
   align-items: center;
+  list-style-type: none;
+  padding-inline-start: 0px;
 }
-
+span{
+   font-family: "Cookie", cursive;
+   font-size: 35px;
+}
 img{
   object-fit: contain;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   padding: 10px;
+}
+
+button {
+
+  
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 #imgContainer{
   flex-grow: 1;
@@ -93,7 +103,7 @@ color: green;
 
 }
 .fail{
-color: red;
+color: red;`
 
 }
 

@@ -6,16 +6,17 @@ function closeDialog() {
     dialog.close();
 }
 
-function listeningForButtons (array, dogName){
+function listeningForButtons (array){
 
-        
+        let gameDogImg = document.querySelector('[data-name]')
+        let winningDog = gameDogImg.getAttribute('data-name')
         // reference ^ const element = document.querySelector('[data-example="someValue"]');
     for (let i = 0 ; i < array.length; i++) {
         let thisButton = array[i]
         //whereever this is be4ing set is where things are going wrong
        
         let buttonDog = thisButton.getAttribute('data-dogname')
-        // console.log('does app know what imgs WINNINGDOG is?', winningDog )
+        console.log('does app know what imgs WINNINGDOG is?', winningDog )
         console.log('does app know what buttons BUTTONDOG means?', buttonDog)
 
 
@@ -31,19 +32,16 @@ function listeningForButtons (array, dogName){
         //     thisButton.setAttribute('data-correctAnswer', 'true') 
         //     console.log('is correct answer marked true?', thisButton)
         // }
-        //     console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
-        //  let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
+            console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
+         let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
 
-            // thisButton.setAttribute("data-choiceSelected", "true")
-            // let compareAttributes = thisButton.getAttribute('data-choiceSelected')
+            thisButton.setAttribute("data-choiceSelected", "true")
+            let compareAttributes = thisButton.getAttribute('data-choiceSelected')
             let title = document.getElementById("title");     
-        // let gameDogImg = document.querySelector('[data-name]')
-        // console.log("gameDogImg", gameDogImg);
-        // let winningDog = gameDogImg.getAttribute('data-name')
             // let titleArea = document.getElementById('titleArea')
         //   && usingDataAttrb === 'true'
 // compareAttributes === 'true' && usingDataAttrb === 'true' 
-            if(dogName === buttonDog){
+            if(winningDog === buttonDog){
                 title.className = 'pass'
                 console.log('Correct! Great Job.')
                 title.innerHTML = 'Correct! Great Job.'
@@ -54,7 +52,7 @@ function listeningForButtons (array, dogName){
                 document.getElementById('3').disabled = true;
                 document.getElementById('4').disabled = true;
                      
-                setTimeout(closeDialog, 5000)
+                setTimeout(closeDialog, 2500)
             }else{
                 // console.log('Incorrect! Better luck next time.');
                 title.innerHTML = 'Incorrect! Better luck next time.';
@@ -65,7 +63,7 @@ function listeningForButtons (array, dogName){
                 document.getElementById('2').disabled = true;
                 document.getElementById('3').disabled = true;
                 document.getElementById('4').disabled = true;
-                setTimeout(closeDialog, 5000)
+                setTimeout(closeDialog, 2500)
             }
         })  
     }       
