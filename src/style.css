@@ -9,6 +9,8 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
+  padding-top: 20px;
+  background-color: rgb(235, 220, 222);
   
 
 }
@@ -17,13 +19,16 @@
 dialog:not([open]) { display: none !important; }
 
 .gridSection {
+  
   display: grid;
   place-items: center;
   /* color: #000; */
-  border: 5px solid pink;
+  border: 10px solid pink ;
+  margin: 5px;
   border-radius: 16px;
-  /* box-shadow:  20px 50px 10px pink inset; */
-  box-shadow: 0 0 80px #9b7edf inset;
+  box-shadow:  0 0 30px #9b7edf, 20px 50px 30px pink inset;
+  /* box-shadow: 0 0 80px #9b7edf inset; */
+
   
   
 }
@@ -66,16 +71,28 @@ img{
   object-fit: contain;
   height: 250px;
   width: 250px;
-  padding: 10px;
+  /* padding: 10px; */
+}
+#playButton:hover{
+ /* border: 20px solid #9b7edf; */
+ background-color: black;
+ color: #9b7edf 
+}
+#playbuttonContainer {
+  display: flex;
+  justify-content: center;
 }
 
-button {
+#playButton {
 
-  
   font-family: "Crimson Text", serif;
+  font-size: 30px;
   font-weight: 400;
   font-style: normal;
-
+  background-color: #9b7edf;
+ 
+  width: 600px;
+  border-radius: 16px;
 }
 #imgContainer{
   flex-grow: 1;
