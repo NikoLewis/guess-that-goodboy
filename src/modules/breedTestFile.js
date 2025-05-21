@@ -19,7 +19,7 @@ let dogBreedList = [
   'husky',         'keeshond',    'kelpie',          'kombai',
   'komondor',      'kuvasz',      'labradoodle',     'labrador',
   'leonberg',      'lhasa',       'malamute',        'malinois',
-  'maltese',       'bull mastiff',  'swiss mountain dog',   'mexicanhairless', 'mix',
+  'maltese',       'bull mastiff',  'swiss mountain dog',   'mexican hairless', 'mix',
   'bernese mountain dog',      'indian mudhol',      'newfoundland',    'otterhound',
   'caucasian ovcharka',      'papillon',    'indian pariah',          'pekinese',
   'pembroke corgi',      'miniature pinscher',    'pitbull',         'german pointer', 'german longhaired pointer',

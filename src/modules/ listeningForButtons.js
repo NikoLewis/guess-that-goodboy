@@ -1,23 +1,47 @@
 let dialog = document.getElementById("chosenPupDialog");
-let dialogButton = document.getElementById("closeButton");
-let dogGroup = document.getElementsByClassName("gridImage")
+// let dialogButton = document.getElementById("closeButton");
+// let dogGroup = document.getElementsByClassName("gridImage")
 
 function closeDialog() {
     dialog.close();
 }
 
 function listeningForButtons (array){
+
+        let gameDogImg = document.querySelector('[data-name]')
+        let winningDog = gameDogImg.getAttribute('data-name')
+        // reference ^ const element = document.querySelector('[data-example="someValue"]');
     for (let i = 0 ; i < array.length; i++) {
         let thisButton = array[i]
-        let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
-        
+        //whereever this is be4ing set is where things are going wrong
+       
+        let buttonDog = thisButton.getAttribute('data-dogname')
+        console.log('does app know what imgs WINNINGDOG is?', winningDog )
+        console.log('does app know what buttons BUTTONDOG means?', buttonDog)
+
+
+        // if(winningDog === buttonDog){
+        //     thisButton.setAttribute('data-correctAnswer', 'true') 
+        //     console.log('is correct answer marked true?', thisButton)
+        // }
+        // console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
+        //  let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
+
         thisButton.addEventListener('click' , function (){
-            thisButton.setAttribute("data-choiceSelected", "true")
-            let compareAttributes = thisButton.getAttribute('data-choiceSelected')
+        //      if(winningDog === buttonDog){
+        //     thisButton.setAttribute('data-correctAnswer', 'true') 
+        //     console.log('is correct answer marked true?', thisButton)
+        // }
+            // console.log('is correct answer marked true?', thisButton.getAttribute('data-correctAnswer'))
+        //  let usingDataAttrb = thisButton.getAttribute('data-correctAnswer')
+
+        //     thisButton.setAttribute("data-choiceSelected", "true")
+        //     let compareAttributes = thisButton.getAttribute('data-choiceSelected')
             let title = document.getElementById("title");     
             // let titleArea = document.getElementById('titleArea')
-
-            if(compareAttributes === 'true' && usingDataAttrb === 'true'){
+        //   && usingDataAttrb === 'true'
+// compareAttributes === 'true' && usingDataAttrb === 'true' 
+            if(winningDog === buttonDog){
                 title.className = 'pass'
                 console.log('Correct! Great Job.')
                 title.innerHTML = 'Correct! Great Job.'
@@ -30,8 +54,8 @@ function listeningForButtons (array){
                      
                 setTimeout(closeDialog, 2500)
             }else{
-                console.log('Incorrect! Better luck next time.');
-                title.textContent = 'Incorrect! Better luck next time.';
+                // console.log('Incorrect! Better luck next time.');
+                title.innerHTML = 'Incorrect! Better luck next time.';
                 title.className = 'fail';
                 // let markedPup = dogGroup.filter((dog) => dog.src === whichBreed)
                 //     markedPup[0].className = 'wrong'
@@ -46,19 +70,3 @@ function listeningForButtons (array){
  }
 
  export default listeningForButtons;
-
- 
-                // if(buttons[i].getAttribute('data-dogName') == dogName){
-                //     console.log(`${buttons[i].getAttribute('id')} is the correct answer`)
-                //     buttons[i].setAttribute('data-CorrectAnswer', "true")
-                //     correctAnswers.push(whichBreed)
-                //     console.log('has the attribute been changed', buttons[i].getAttribute('data-CorrectAnswer'))
-                //     console.log('this is from the correct answers array', correctAnswers)
-                    
-                    
-                // }else{
-                //     console.log(`${buttons[i].getAttribute('id')} is the WRONG answer`)  
-                //     falseAnswers.push(whichBreed)  
-                //     console.log('this is from the false answers array', falseAnswers)
-                    
-                // }
