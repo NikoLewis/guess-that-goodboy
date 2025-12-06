@@ -1,8 +1,6 @@
 
 <div align="center"><img src="./public/final-product-image.png"></div>
-<h1 align="center">Guess That Goodboy!</h1>
-<p align="center"><strong>Innovation Final Phase Project</strong>
-<br/>
+
 
 # 🐾 Guess That Good Boy!
 
