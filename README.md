@@ -4,7 +4,7 @@
 
 # 🐾 Guess That Good Boy!
 
-> **"Who's that... Good Boy?!"** 🎾
+> **"Who's that... Good Boy?!"** 🐶 
 
 Welcome to **Guess That Good Boy**, the ultimate test of your canine knowledge! This interactive web app fetches random pups from the Dog API and challenges you to identify the correct breed. Do you know your Terriers from your Retrievers? Come fetch some high scores!
 
