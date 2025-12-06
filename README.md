@@ -4,54 +4,78 @@
 <p align="center"><strong>Innovation Final Phase Project</strong>
 <br/>
 
+# 🐾 Guess That Good Boy!
+
+> **"Who's that... Good Boy?!"** 🎾
+
+Welcome to **Guess That Good Boy**, the ultimate test of your canine knowledge! This interactive web app fetches random pups from the Dog API and challenges you to identify the correct breed. Do you know your Terriers from your Retrievers? Come fetch some high scores!
+
+---
+
+## 🦴 Fetch The Demo
+
+| Resource | Link |
+| :--- | :--- |
+| **Play the Game** | [**https://guess-that-goodboy.netlify.app/**](https://guess-that-goodboy.netlify.app/) |
+| **The Repo** | [**github.com/NikoLewis/guess-that-goodboy**](https://github.com/NikoLewis/guess-that-goodboy) |
+
+---
+
+## ✨ Features (The Treats)
+
+* **Real-Time Fetching:** We use the [Dog CEO API](https://dog.ceo/dog-api/) to grab a fresh, random "Good Boy" (or Girl!) for every round.
+* **Streak Tracking:** keep your momentum going! The game tracks your correct answers in a row. How high can you go before you get stumped by a Labradoodle?
+* **Responsive Design:** Play on your phone while walking your dog, or on your desktop.
+* **Instant Feedback:** Know immediately if you're a Top Dog or if you need to go back to obedience school (just kidding, try again!).
+
+---
+
+## 🛠️ Under The Hood (Tech Stack)
+
+Built with love (and code) using:
+
+* **React:** For a snappy, interactive UI that feels like a game.
+* **CSS / Tailwind:** Styling that keeps things clean and friendly.
+* **Fetch API:** To retrieve our furry friends asynchronously.
+* **Netlify:** For seamless deployment.
+
+---
+
+## 💻 How to Run (Sit, Stay, Run)
+
+Want to run this locally? Follow these commands:
+
+1.  **Clone the Repo** (Come here, boy!):
+    ```bash
+    git clone [https://github.com/NikoLewis/guess-that-goodboy.git](https://github.com/NikoLewis/guess-that-goodboy.git)
+    cd guess-that-goodboy
+    ```
+
+2.  **Install Dependencies** (Get the treats):
+    ```bash
+    npm install
+    ```
+
+3.  **Start the App** (Zoomies!):
+    ```bash
+    npm start
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+---
+
+## 📬 Bark At Me
+
+Got feedback? Found a bug? Just want to talk about dogs?
+
+* **Email:** `nikolewis@pursuit.org`
+* **GitHub:** [@NikoLewis](https://github.com/NikoLewis)
+
+---
+
+*Made with 💜 and 🐕 by Niko Lewis*
 
 
-<h2>Objective</h2>
 
-- Browser-based puppy guessing game using [dog API](https://dog.ceo/dog-api/) ,vanilla js, and css.
-  
-## Inspo
+ 
 
-As a petsitter and dog lover, spotting pups in the wild is one of my favorite things. I thought it might be fun for myself and others test their doggie knowledge while enjoying cute doggos to relieve stress.
-
-<h2>Assignment</h2>
-
-> [Instructions](https://docs.google.com/document/d1ru1Apd9dbrMy-tY4e05f8fTmaOYX0J24XRd8vUnLsUM/edit?usp=sharing) 
-
-### Setting up App
-- fork project
-- download project folder
-- navigate to inside of project folder using your terminal
-- (install npm if it isn't already) 
-- use npm in terminal to install vite:
-  - "npm create vite@latest"
-  - then follow prompts
-- to run server, enter : 
-  - "npm run dev" 
-- (use CTRL + c to stop server when needed)
-
-### How to play
-- press "create new set of pups to guess" button to create gameboard grid
-- click on any of the 9 dog images to open a dialog that will show you the picture exclusively and make a guess which breed it is using the 4 buttons below
-- The dialog title will inform you of correct and incorrect guesses and then close itself after 5 seconds
-- you can proceed to try your hand at guessing the other dogs, or go back to previous one to study like a digital flashcard
-- Whenever you would like more "goodboys" to guess, click the same "create..." button above and a new gameboard grid will appear.
-
-### Submission summary:
-- Repo (@ Canvas)
-- Netlify deployment (@ Canvas)
-- final product image ( diplayed on top of READme and can be found in public folder)
-- READme (found here)
-
-    
-<h2>Project status</h2>
-Completed
-
-<h2>Credits</h2>
-
-- Coded by: <a href="https://www.linkedin.com/in/nikolewis/)" target="_blank">Niko Lewis</a>
-- Dog images credit to Dog API
-- Sorting algorithm learned from [Modern Javascript Tutorial](https://javascript.info/)
-<h2>Copyright 2025</h2>
-This project is licensed under the terms of the MIT license
- and protected by The Knowledge House Honor Code and Community Code of Conduct.
